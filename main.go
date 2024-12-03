@@ -4,19 +4,18 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strings"
 )
 
 func main() {
-	file, err := os.ReadFile("input/day2.txt")
+	file, err := os.ReadFile("input/day3.txt")
 	if err != nil {
 		log.Fatal(err)
 		return
 	}
 
-	lines := strings.Split(string(file), "\n")
+	// lines := strings.Split(string(file), "\n")
 
-	part1, part2, err := day2(lines)
+	part1, part2, err := day3(string(file))
 
 	if err != nil {
 		log.Fatal(err)
