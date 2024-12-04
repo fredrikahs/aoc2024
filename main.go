@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	file, err := os.ReadFile("input/day1.txt")
+	file, err := os.ReadFile("input/day2.txt")
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -16,7 +16,7 @@ func main() {
 
 	lines := strings.Split(string(file), "\n")
 
-	part1, part2, err := day1(lines)
+	part1, part2, err := day2(lines)
 
 	if err != nil {
 		log.Fatal(err)
